@@ -23,3 +23,4 @@ dotfiles.forEach(function (file) {
     }
   })
 })
+

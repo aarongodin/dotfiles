@@ -31,8 +31,12 @@ function rm-swap {
 	find . -name "*.swp" -print0 | xargs -0 rm -rf
 }
 
-function lsa {
-	ls -alh
+function l {
+	ls -Gp
+}
+
+function ll {
+	ls -alhGp
 }
 
 function psql {
