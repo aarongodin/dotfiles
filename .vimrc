@@ -48,7 +48,7 @@ set noexpandtab
 
 " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
-set list
+set nolist
 
 " Allow going to a the next 'virtual' line when the line is wrapped
 noremap j gj
