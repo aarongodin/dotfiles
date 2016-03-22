@@ -114,6 +114,9 @@ set splitright
 syntax enable
 colorscheme flattened_light
 
+" CTRL-P
+let g:ctrlp_custom_ignore = '(node_modules|\.git)'
+
 " Language-specific behavior
 
 " JSX

@@ -43,6 +43,10 @@ function psql {
 	/Applications/Postgres.app/Contents/Versions/9.5/bin/psql -p5432
 }
 
+function nw {
+  ~/bin/nwjs/nwjs.app/Contents/MacOS/nwjs $1
+}
+
 export PATH=$HOME/.binctl:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
