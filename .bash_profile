@@ -47,6 +47,14 @@ function nw {
   ~/bin/nwjs/nwjs.app/Contents/MacOS/nwjs $1
 }
 
+function gc {
+	git commit -am $1
+}
+
+function gpom {
+	git push origin master
+}
+
 export PATH=$HOME/.binctl:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
