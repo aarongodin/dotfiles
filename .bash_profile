@@ -55,6 +55,10 @@ function gpom {
 	git push origin master
 }
 
+function gpod {
+	git push origin develop
+}
+
 export PATH=$HOME/.binctl:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
