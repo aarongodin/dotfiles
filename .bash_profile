@@ -22,10 +22,6 @@ function tmn() {
 	tmux new -s $1
 }
 
-function tms() {
-	tmux switch -t $1
-}
-
 function rm-swap {
 	# Recursively remove vim swap files
 	find . -name "*.swp" -print0 | xargs -0 rm -rf
@@ -59,7 +55,14 @@ function gpod {
 	git push origin develop
 }
 
+function gpor {
+	git push origin release
+}
+
+function mochab {
+	mocha --compilers js:babel-register $1
+}
+
 export PATH=$HOME/.binctl:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
