@@ -1,4 +1,4 @@
-ulimit -n 2000
+ulimit -n 10000
 
 # NVM
 [ -s "/Users/a6001410/.nvm/nvm.sh" ] && . "/Users/a6001410/.nvm/nvm.sh"

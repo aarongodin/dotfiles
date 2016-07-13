@@ -124,9 +124,5 @@ let g:ctrlp_custom_ignore = '(node_modules|\.git)'
 " (this was breaking some JS indentation so I've restricted it to just jsx files)
 let g:jsx_ext_required = 1
 
-" Freemarker
-" Apply ftl syntax highlighting to html syntax
-au BufReadPost *.ftl set syntax=html
-
 " Finally, override with project-specific configuration, defined in the current directory's .vimrc
 set exrc
