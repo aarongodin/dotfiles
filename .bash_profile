@@ -47,6 +47,10 @@ function gc {
 	git commit -am $1
 }
 
+function gs {
+	git status
+}
+
 function gpom {
 	git push origin master
 }
