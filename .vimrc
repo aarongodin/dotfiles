@@ -51,6 +51,9 @@ set noexpandtab
 set listchars=tab:▸\ ,eol:¬
 set nolist
 
+" Turn off hiding of quotes in vim-json
+set conceallevel=0
+
 " Allow going to a the next 'virtual' line when the line is wrapped
 noremap j gj
 noremap k gk

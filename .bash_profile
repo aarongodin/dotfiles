@@ -67,6 +67,6 @@ function mochab {
 	mocha --compilers js:babel-register $1
 }
 
-export PATH=$HOME/.binctl:$PATH
+export PATH=$HOME/.binctl:~/.bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
