@@ -1,8 +1,5 @@
 ulimit -n 10000
 
-# NVM
-[ -s "/Users/a6001410/.nvm/nvm.sh" ] && . "/Users/a6001410/.nvm/nvm.sh"
-
 # bash-git-prompt
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
@@ -69,4 +66,6 @@ function mochab {
 
 export PATH=$HOME/.binctl:~/.bin:$PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
