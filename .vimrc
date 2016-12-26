@@ -19,7 +19,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'chaquotay/ftl-vim-syntax'
 Plugin 'groenewege/vim-less'
-Plugin 'elzr/vim-json'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'rking/ag.vim'
@@ -50,9 +49,6 @@ set noexpandtab
 " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 set nolist
-
-" Turn off hiding of quotes in vim-json
-set conceallevel=0
 
 " Allow going to a the next 'virtual' line when the line is wrapped
 noremap j gj
