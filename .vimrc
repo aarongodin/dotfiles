@@ -28,6 +28,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'romainl/flattened'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'rhysd/vim-crystal'
 
 " End vundle initialization
 call vundle#end()
