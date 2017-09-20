@@ -4,7 +4,8 @@ var fs = require('fs')
 var dotfiles = [
   '.vimrc',
   '.tmux.conf',
-  '.bash_profile'
+  '.bash_profile',
+  '.gemrc'
 ]
 
 dotfiles.forEach(function (file) {
