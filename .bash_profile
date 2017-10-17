@@ -12,28 +12,28 @@ function tma() {
 }
 
 function tml() {
-	tmux list-sessions
+  tmux list-sessions
 }
 
 function tmn() {
-	tmux new -s $1
+  tmux new -s $1
 }
 
 function rm-swap {
-	# Recursively remove vim swap files
-	find . -name "*.swp" -print0 | xargs -0 rm -rf
+  # Recursively remove vim swap files
+  find . -name "*.swp" -print0 | xargs -0 rm -rf
 }
 
 function l {
-	ls -Gp
+  ls -Gp
 }
 
 function ll {
-	ls -alhGp
+  ls -alhGp
 }
 
 function psql {
-	/Applications/Postgres.app/Contents/Versions/9.5/bin/psql -p5432
+  /Applications/Postgres.app/Contents/Versions/9.5/bin/psql -p5432
 }
 
 function nw {
@@ -41,27 +41,27 @@ function nw {
 }
 
 function gc {
-	git commit -am $1
+  git commit -am $1
 }
 
 function gs {
-	git status
+  git status
 }
 
 function gpom {
-	git push origin master
+  git push origin master
 }
 
 function gpod {
-	git push origin develop
+  git push origin develop
 }
 
 function gpor {
-	git push origin release
+  git push origin release
 }
 
 function mochab {
-	mocha --compilers js:babel-register $1
+  mocha --compilers js:babel-register $1
 }
 
 export PATH=$HOME/.binctl:~/.bin:$PATH
