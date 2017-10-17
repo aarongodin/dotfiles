@@ -4,7 +4,8 @@ const dotfiles = [
   '.vimrc',
   '.tmux.conf',
   '.bash_profile',
-  '.gemrc'
+  '.gemrc',
+	'.gitconfig'
 ]
 
 dotfiles.forEach(file => {
