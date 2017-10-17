@@ -32,14 +32,6 @@ function ll {
   ls -alhGp
 }
 
-function psql {
-  /Applications/Postgres.app/Contents/Versions/9.5/bin/psql -p5432
-}
-
-function nw {
-  ~/bin/nwjs/nwjs.app/Contents/MacOS/nwjs $1
-}
-
 function gc {
   git commit -am $1
 }
@@ -60,10 +52,7 @@ function gpor {
   git push origin release
 }
 
-function mochab {
-  mocha --compilers js:babel-register $1
-}
-
+# Best Buy
 export PATH=$HOME/.binctl:~/.bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
