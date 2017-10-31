@@ -64,6 +64,9 @@ imap jj <Esc>:w<CR>
 
 map <c-i> :set paste<CR>i
 
+" Fix the backspace to allow deleting like most programs
+set backspace=indent,eol,start
+
 " Change the leader key to be comma
 " http://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 let mapleader = ","
