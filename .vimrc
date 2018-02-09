@@ -29,6 +29,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'romainl/flattened'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'rhysd/vim-crystal'
+Plugin 'hashivim/vim-terraform'
 
 " End vundle initialization
 call vundle#end()
@@ -45,7 +46,7 @@ set wrap
 set linebreak
 set tabstop=2
 set shiftwidth=2
-set noexpandtab
+set expandtab
 
 " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
