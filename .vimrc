@@ -31,6 +31,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'rhysd/vim-crystal'
 Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
+Plugin 'chr4/nginx.vim'
 
 " End vundle initialization
 call vundle#end()
