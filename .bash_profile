@@ -1,8 +1,10 @@
 ulimit -n 10000
 
 # bash-git-prompt
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+if [ "$(which brew)" != "" ]; then
+  if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+  fi
 fi
 
 # git-completion bash
@@ -55,6 +57,11 @@ function gpod {
 
 function gpor {
   git push origin release
+}
+
+# Docker handyness
+function docker-rm-all {
+  docker rm $(docker ps -a -q -f status=exited)
 }
 
 export NVM_DIR="$HOME/.nvm"
