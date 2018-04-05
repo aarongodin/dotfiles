@@ -50,7 +50,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Show invisible characters
+" Invisible characters
 set listchars=tab:▸\ ,eol:¬
 set nolist
 
