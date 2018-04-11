@@ -23,6 +23,7 @@ Plugin 'mileszs/ack.vim'
 
 " Editing
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'w0rp/ale'
 
 " Langs/Syntax
 Plugin 'isRuslan/vim-es6'
@@ -125,15 +126,18 @@ set splitright
 syntax enable
 colorscheme flattened_light
 
+" ALE
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+
+let g:ale_fix_on_save = 1
+
+" Flow
+let g:flow#showquickfix = 0
+
 " CTRL-P
-let g:ctrlp_custom_ignore = '(node_modules|\.git)'
-
-" Language-specific behavior
-
-" JSX
-" Only syntax highlight jsx on .jsx files.
-" (this was breaking some JS indentation so I've restricted it to just jsx files)
-let g:jsx_ext_required = 1
+let g:ctrlp_custom_ignore = '(node_modules|\.git|coverage)'
 
 " Finally, override with project-specific configuration, defined in the current directory's .vimrc
 set exrc
