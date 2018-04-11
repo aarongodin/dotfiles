@@ -6,28 +6,29 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Vundle
+"""""" Vundle
 Plugin 'VundleVim/Vundle.vim'
 
-" Vundle Plugins
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jimmyhchan/dustjs.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'chaquotay/ftl-vim-syntax'
-Plugin 'groenewege/vim-less'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'rking/ag.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+"""""" Plugins
+" Appearance
 Plugin 'romainl/flattened'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+
+" Project
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+
+" Editing
 Plugin 'scrooloose/nerdcommenter'
+
+" Langs/Syntax
+Plugin 'isRuslan/vim-es6'
+Plugin 'flowtype/vim-flow'
+Plugin 'mxw/vim-jsx'
+Plugin 'groenewege/vim-less'
 Plugin 'rhysd/vim-crystal'
 Plugin 'hashivim/vim-terraform'
 Plugin 'hashivim/vim-vagrant'
@@ -73,6 +74,9 @@ set backspace=indent,eol,start
 " Change the leader key to be comma
 " http://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 let mapleader = ","
+
+" Show indent guides
+let g:indent_guides_enable_on_vim_startup = 1
 
 function! WrapForTmux(s)
   if !exists('$TMUX')
