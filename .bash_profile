@@ -59,6 +59,8 @@ function gpor {
   git push origin release
 }
 
+alias v=vivaldi
+
 # Docker handyness
 function docker-rm-all {
   docker rm $(docker ps -a -q -f status=exited)

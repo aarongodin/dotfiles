@@ -11,10 +11,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 """""" Plugins
 " Appearance
-Plugin 'romainl/flattened'
+Plugin 'haishanh/night-owl.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'Airblade/vim-gitgutter'
 
 " Project
 Plugin 'scrooloose/nerdtree'
@@ -123,8 +123,12 @@ set splitbelow
 set splitright
 
 " Syntax Highlighting
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 syntax enable
-colorscheme flattened_light
+colorscheme night-owl
 
 " ALE
 let g:ale_fixers = {
