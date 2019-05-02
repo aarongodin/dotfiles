@@ -11,7 +11,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 """""" Plugins
 " Appearance
-Plugin 'haishanh/night-owl.vim'
+" Plugin 'haishanh/night-owl.vim'
+Plugin 'sickill/vim-monokai'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
 Plugin 'Airblade/vim-gitgutter'
@@ -27,8 +28,8 @@ Plugin 'w0rp/ale'
 
 " Langs/Syntax
 Plugin 'isRuslan/vim-es6'
-Plugin 'flowtype/vim-flow'
 Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'groenewege/vim-less'
 Plugin 'rhysd/vim-crystal'
 Plugin 'hashivim/vim-terraform'
@@ -109,6 +110,7 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMinimalUI=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:nerdtree_tabs_open_on_console_startup=1
+let NERDTreeIgnore=['\.git', 'node_modules']
 
 " Modifications for moving between splits
 " Instead of having to type ctrl-w plus a direction,
@@ -128,7 +130,8 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme night-owl
+" colorscheme night-owl
+colorscheme monokai
 
 " ALE
 let g:ale_fixers = {
@@ -136,9 +139,6 @@ let g:ale_fixers = {
 \}
 
 let g:ale_fix_on_save = 1
-
-" Flow
-let g:flow#showquickfix = 0
 
 " CTRL-P
 let g:ctrlp_custom_ignore = '(node_modules|\.git|coverage)'
