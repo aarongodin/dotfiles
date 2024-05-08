@@ -1,3 +1,3 @@
-**dotfiles**
+# aarongodin/dotfiles
 
-_supersimple_® for my .files
+Install with `./install.sh`.
